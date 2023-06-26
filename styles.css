@@ -1,5 +1,128 @@
+:root {
+    --color1: black;
+    --color2: white
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(pink, lavender);
+
+    padding: 200px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whole-container {
+    padding: 30px;
+
+    background: linear-gradient(lavender, lavenderblush);
+
+    border-radius: 40px;
+    box-shadow: 15px 15px grey;
+}
+
+.container {
+    margin: 20px auto;
+
+    min-width: 0;
+    min-height: 0;
+
+    width: fit-content;
+    height: fit-content;
+
+    max-width: 85vw;
+    max-height: 85vh;
+
+    overflow: hidden;
+
+    border: 2px solid black;
+
+    border-radius: 5px;
+}
+
+.button {
+    margin: 40px 20px;
+
+    width: 100px;
+    height: 40px;
+
+    border-radius: 5px;
+    box-shadow: 5px 5px grey;
+
+    transition: transform 0.5s;
+}
+
+.button:hover {
+    transform: translateY(-20px);
+}
+
+#color-pick {
+    display: block;
+    margin:  10px auto;
+}
+
+.circle {
+    background-color: var(--color1);
+    width: 30px;
+    height: 30px;
+    
+    padding: 2px;
+    border-radius: 7px;
+    box-shadow: 10px 10px var(--color2);
+
+    display: block;
+    margin:  20px auto 10px;
+
+    transition: transform 0.3s;
+}
+
+input {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.circle:hover {
+    transform: translateY(-10px) scale(2);
+}
+
+.grid-box {
+    width: 15px;
+    height: 15px;
+    display: flex;
+}
+
+.grid-box:hover {
+    background-color: var(--color1);
+}
+
+.box-type-1 {
+    background-color: grey;
+}
+
+.box-type-2 {
+    background-color: white;
+}
+
+.row-div {
+    display: flex;
+}
+
+.options {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
